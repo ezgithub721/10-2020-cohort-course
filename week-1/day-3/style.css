@@ -4,3 +4,27 @@ p {
   font-style: italic;
   line-height: 22px;
 }
+
+/*color is only font*/
+
+/*PROPERTY : VALUES*/
+
+/*RGB*/
+
+/*Hex Code    # 4, coolors.co Base 16 code for RGB*/
+
+/* Web Topograhy*/
+/*Font family priority list*?
+
+
+h1 {
+text-align: center;
+text-transform: uppercase;
+text-decoration: underline;
+line-height: 55px;
+font-weight: bold;
+font-style: italic;
+font-family: ubuntu, aerial, serif;
+font-size: 150px;
+
+}
