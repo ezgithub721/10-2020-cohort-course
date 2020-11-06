@@ -1,0 +1,47 @@
+.col {
+    float: left;
+    width: 33%;
+    padding: 60%;
+    border-left: 5%;
+    height: 700px;
+    border-right: 5%;
+}
+#center {
+    border-left: solid 10px black;
+    border-right: solid 10px black;
+}
+span{
+    color: green;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+h1{
+    font-style: normal;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 40px;
+}
+
+h2{
+    text-align: center;
+    color: cadetblue;
+    font-style: normal;
+    text-transform: capitalize;
+
+}
+h3{
+    text-align: left;
+    color: cadetblue;
+    font-style: oblique;
+
+}
+#center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+
