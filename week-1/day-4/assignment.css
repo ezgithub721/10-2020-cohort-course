@@ -1,40 +1,23 @@
 .col {
-    float: left;
+    display: inline-block;
     width: 33%;
-    padding: 60%;
-    border-left: 5%;
-    height: 700px;
-    border-right: 5%;
+    margin-top: 5px;
 }
-.center {
-    border-left: solid 10px black;
-    border-right: solid 10px black;
-}
+
 h1{
-    font-style: normal;
-    text-transform: capitalize;
-    text-align: center;
-    font-size: 40px;
+    font-size: 70px;
+}
+
+h3{
+    font-size: 35px;
+
 }
 
 h2{
-    text-align: center;
-    color: cadetblue;
-    font-style: normal;
+    text-decoration: darkblue;
+    font-size: 75px;
     text-transform: capitalize;
-
-}
-h3{
-    text-align: left;
-    color: cadetblue;
-    font-style: oblique;
-
-}
-#center{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-
+    border-top-color:11px solid black;
+    border-bottom-color:11px solid black;
 }
 
