@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Carousel Assignment W2D4- Zapanta</title>
+</head>
+<link rel="stylesheet" href="./Assignment W2D4.css">
+
+<body>
+
+    <H1><u>Rush Hour Movie Carousel</u> </H1>
+    <div id="window" ></div>
+      <div id="imageSlider">
+        <img height="800px"; width="700px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSLjscc3X1vn8YqPUWwae9qTJjWDI5MxMrk6g&usqp=CAU"alt="">
+        <img height="800px"; width="700px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTXj6hYL4YOWdFv7GnW5349RkbhalvSB0hloQ&usqp=CAU"alt="">
+        <img height="800px"; width="700px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT8JQ3SbistWnN4JHVbWyuFZWe2JUOqkvXhaA&usqp=CAU"alt="">
+        <img height="800px"; width="700px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTL8ORRMkQX78od033VlQvY3NP9UYdBnAmSfA&usqp=CAU"alt="">
+        <img height="800px"; width="700px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQGLpZqAOLI28d_C43Bx8_a7vwgb1WfwO4MdA&usqp=CAU"alt="">
+
+  <H1><u>Die Hard Movie Carousel</u> </H1>
+    <div id="window" ></div>
+      <div id="imageSlider">
+          <img height="800px"; width="700px" src="./Diehard1.jpg" alt="">
+          <img height="800px"; width="700px" src="./Diehard2.jpg" alt="">
+          <img height="800px"; width="700px" src="./Diehard3.jpg" alt="">
+          <img height="800px"; width="700px" src="./Diehard4.jpg" alt="">
+          <img height="800px"; width="700px" src="./Diehard5.jpg" alt="">
+    </div>
+  </div>
+
+  <button onclick="PrevImage()">previous</button>
+  <button onclick="PrevImage()">next</button>
+
+  <script>
+ var currentPosition = 0;
+
+ var prevImage = function() {
+     currentPosition = currentPosition + 700;
+     Document.getElementById('imageSlider').style.transform = 'translateX(' + currentPosition + 'px)'
+ }
+
+ var prevImage = function() {
+     currentPosition = currentPosition - 700;
+     Document.getElementById('imageSlider').style.transform = 'translateX(' + currentPosition + 'px)'
+ }
+
+  </script>
+</body>
+</html>
