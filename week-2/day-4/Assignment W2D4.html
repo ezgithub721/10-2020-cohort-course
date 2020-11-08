@@ -6,28 +6,44 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Carousel Assignment W2D4- Zapanta</title>
 </head>
-<link rel="stylesheet" href="./Assignment W2D4.css">
+
+<style>
+@keyframes example {
+    from {transform: translateX(0);}
+    to {transform: translateX(200);}
+}
+#imageSlider {
+
+animation-name: example;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+}
+
+</style>
 <body>
 
     <H1><u>Rush Hour Movie Carousel</u> </H1>
-    <div id="window" ></div>
-      <div id="imageSlider">
-        <img height="800px"; width="700px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSLjscc3X1vn8YqPUWwae9qTJjWDI5MxMrk6g&usqp=CAU"alt="">
-        <img height="800px"; width="700px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTXj6hYL4YOWdFv7GnW5349RkbhalvSB0hloQ&usqp=CAU"alt="">
-        <img height="800px"; width="700px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT8JQ3SbistWnN4JHVbWyuFZWe2JUOqkvXhaA&usqp=CAU"alt="">
-        <img height="800px"; width="700px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTL8ORRMkQX78od033VlQvY3NP9UYdBnAmSfA&usqp=CAU"alt="">
-        <img height="800px"; width="700px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQGLpZqAOLI28d_C43Bx8_a7vwgb1WfwO4MdA&usqp=CAU"alt="">
-
-  <H1><u>Die Hard Movie Carousel</u> </H1>
-    <div id="window" ></div>
-      <div id="imageSlider">
-          <img height="800px"; width="700px" src="./Diehard1.jpg" alt="">
-          <img height="800px"; width="700px" src="./Diehard2.jpg" alt="">
-          <img height="800px"; width="700px" src="./Diehard3.jpg" alt="">
-          <img height="800px"; width="700px" src="./Diehard4.jpg" alt="">
-          <img height="800px"; width="700px" src="./Diehard5.jpg" alt="">
+ <div id="window" style="background-color:mediumpurple; height: 300px; width: 300px; margin: 0 auto;">
+     <div id="imageSlider" style="display: flex;">
+        <img height="300px"; width="300px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSLjscc3X1vn8YqPUWwae9qTJjWDI5MxMrk6g&usqp=CAU"alt="">
+        <img height="300px"; width="300px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTXj6hYL4YOWdFv7GnW5349RkbhalvSB0hloQ&usqp=CAU"alt="">
+        <img height="300px"; width="300px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT8JQ3SbistWnN4JHVbWyuFZWe2JUOqkvXhaA&usqp=CAU"alt="">
+        <img height="300px"; width="300px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTL8ORRMkQX78od033VlQvY3NP9UYdBnAmSfA&usqp=CAU"alt="">
+        <img height="300px"; width="300px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQGLpZqAOLI28d_C43Bx8_a7vwgb1WfwO4MdA&usqp=CAU"alt="">
     </div>
-  </div>
+</div>
+<H1><u>Die Hard Movie Carousel</u> </H1>
+<div id="window" style="background-color:mediumpurple; height: 300px; width: 300px; margin: 0 auto;">
+  <div id="imageSlider" style="display: flex;">
+      <img height="300px"; width="300px" src="./Diehard1.jpg" alt="">
+      <img height="300px"; width="300px" src="./Diehard2.jpg" alt="">
+      <img height="300px"; width="300px"src="./Diehard3.jpg" alt="">
+      <img height="300px"; width="300px" src="./Diehard4.jpg" alt="">
+      <img height="300px"; width="300px" src="./Diehard5.jpg" alt="">
+</div>
+
+</div>
+
 
   <button onclick="PrevImage()">previous</button>
   <button onclick="PrevImage()">next</button>

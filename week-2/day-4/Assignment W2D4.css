@@ -1,16 +1,12 @@
-.imageSlider{
-    display: flex;
-}
+
 
 .window {
-border: 5px;
-width: 700px;
-height: 800px;
 
 }
 
 h1{
     text-align: center;
-    font-size: 55px;
+    font-size: 35px;
     text-decoration: underline;
 }
+
