@@ -10,7 +10,7 @@
 <style>
 @keyframes example {
     from {transform: translateX(0px);}
-    to {transform: translateX(-1500px);}
+    to {transform: translateX(-300px);}
 }
 
 #windowA{
@@ -64,20 +64,14 @@ overflow: hidden;
 </div>
 
 <script>
-<button onclick="PrevImage()">previous</button>
-<button onclick="nextImage()">next</button>
 
 
-var currentPosition = 0;
-var prevImage = function() {
+
+var currentPosition = 0;{
    currentPosition = currentPosition - 300;
    Document.getElementById('imageSlider').style.transform = 'translateX(' + currentPosition + 'px)'
 }
-var currentPosition = 0;
-var nextImage = function() {
-   currentPosition = currentPosition - 300;
-   Document.getElementById('imageSlider).style.transform = 'translateX(' + currentPosition + 'px)'
-}
+
 
 </script>
 
