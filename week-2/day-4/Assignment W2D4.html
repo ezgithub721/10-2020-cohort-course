@@ -9,55 +9,63 @@
 
 <style>
 @keyframes example {
-    from {transform: translateX(0);}
-    to {transform: translateX(200);}
+    from {transform: translateX(0px);}
+    to {transform: translateX(-300px);}
 }
+
 #imageSlider {
 
 animation-name: example;
-animation-duration: 5s;
+animation-duration: 10s;
 animation-iteration-count: infinite;
+overflow: hidden;
 }
 
+#imageJava {
+
+animation-name: example;
+animation-duration: 2s;
+animation-iteration-count:infinite;
+overflow: hidden;
+}
 </style>
 <body>
 
-    <H1><u>Rush Hour Movie Carousel</u> </H1>
- <div id="window" style="background-color:mediumpurple; height: 300px; width: 300px; margin: 0 auto;">
+    <H1><u>Lake View</u> </H1>
+ <div id="window" style= "height: 300px; width: 300px; margin: 0 auto;">
      <div id="imageSlider" style="display: flex;">
-        <img height="300px"; width="300px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSLjscc3X1vn8YqPUWwae9qTJjWDI5MxMrk6g&usqp=CAU"alt="">
-        <img height="300px"; width="300px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTXj6hYL4YOWdFv7GnW5349RkbhalvSB0hloQ&usqp=CAU"alt="">
-        <img height="300px"; width="300px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT8JQ3SbistWnN4JHVbWyuFZWe2JUOqkvXhaA&usqp=CAU"alt="">
-        <img height="300px"; width="300px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTL8ORRMkQX78od033VlQvY3NP9UYdBnAmSfA&usqp=CAU"alt="">
-        <img height="300px"; width="300px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQGLpZqAOLI28d_C43Bx8_a7vwgb1WfwO4MdA&usqp=CAU"alt="">
+        <img height="300px"; width="300px" src="https://cdn.thecrazytourist.com/wp-content/uploads/2018/09/ccimage-shutterstock_601048877.jpg"alt="">
+        <img height="300px"; width="300px" src="https://www.thetravellingpinoys.com/wp-content/uploads/2017/11/alberta-2297204_1920-1024x690-1.jpg"alt="">
+        <img height="300px"; width="300px" src="https://cdn.thecrazytourist.com/wp-content/uploads/2018/09/ccimage-shutterstock_214347211.jpg"alt="">
+        <img height="300px"; width="300px" src="https://www.wallpaperup.com/uploads/wallpapers/2012/04/23/2356/0b7f6807a108b8e8a7e1125f9895c11e-700.jpg"alt="">
+        <img height="300px"; width="300px" src="https://imgs-akamai.mnstatic.com/e7/1b/e71b38fc365dd713993f38338112cc5f.jpg"alt="">
     </div>
 </div>
-<H1><u>Die Hard Movie Carousel</u> </H1>
-<div id="window" style="background-color:mediumpurple; height: 300px; width: 300px; margin: 0 auto;">
-  <div id="imageSlider" style="display: flex;">
-      <img height="300px"; width="300px" src="./Diehard1.jpg" alt="">
-      <img height="300px"; width="300px" src="./Diehard2.jpg" alt="">
-      <img height="300px"; width="300px"src="./Diehard3.jpg" alt="">
-      <img height="300px"; width="300px" src="./Diehard4.jpg" alt="">
-      <img height="300px"; width="300px" src="./Diehard5.jpg" alt="">
-</div>
-
+<H1><u>Utah Mountains</u> </H1>
+<div id="window" style="height: 300px; width: 300px; margin: 0 auto;">
+  <div id="imageJava" style="display: flex;">
+      <img height="300px"; width="300px" src="https://cdn.yellowstoneparknet.com/images/content/2858_571_Salt_Lake_City_Utah_Winter_lg.jpg" alt="">
+      <img height="300px"; width="300px" src="https://www.skiutah.com/blog/authors/erika/7-spring-hikes-salt-lake-city-and/listing_picture_override/hero--xl" alt="">
+      <img height="300px"; width="300px" src="https://i2.wp.com/www.whiskiedwanderlust.com/wp-content/uploads/2018/11/Utah-Mountains.jpg?fit=780%2C585&ssl=1" alt="">
+      <img height="300px"; width="300px" src="https://i.pinimg.com/originals/49/20/db/4920dbe332449afb11ec7a36524a5351.jpg" alt="">
+      <img height="300px"; width="300px" src="https://i.pinimg.com/originals/e1/bd/49/e1bd4977937e6bba5342a3605611dd60.jpg" alt="">
+  </div>
 </div>
 
 
   <button onclick="PrevImage()">previous</button>
-  <button onclick="PrevImage()">next</button>
+  <button onclick="nextImage()">next</button>
 
   <script>
  var currentPosition = 0;
 
  var prevImage = function() {
-     currentPosition = currentPosition + 700;
+     currentPosition = currentPosition + 300;
      Document.getElementById('imageSlider').style.transform = 'translateX(' + currentPosition + 'px)'
  }
 
- var prevImage = function() {
-     currentPosition = currentPosition - 700;
+ var nextImage = function() {
+     currentPosition = currentPosition - 300;
      Document.getElementById('imageSlider').style.transform = 'translateX(' + currentPosition + 'px)'
  }
 
