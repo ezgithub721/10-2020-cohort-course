@@ -63,22 +63,15 @@ overflow: hidden;
   </div>
 </div>
 
+
+<button onclick="PrevImage()">previous</button>
+<button onclick="nextImage()">next</button>
+
 <script>
-
-
-
-var currentPosition = 0;{
+var currentPosition = 0;
    currentPosition = currentPosition - 300;
    Document.getElementById('imageSlider').style.transform = 'translateX(' + currentPosition + 'px)'
-}
 
-
-</script>
-
-  <button onclick="PrevImage()">previous</button>
-  <button onclick="nextImage()">next</button>
-
-  <script>
  var currentPosition = 0;
  var prevImage = function() {
      currentPosition = currentPosition - 300;
