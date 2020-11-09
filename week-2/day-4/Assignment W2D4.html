@@ -10,11 +10,22 @@
 <style>
 @keyframes example {
     from {transform: translateX(0px);}
-    to {transform: translateX(-300px);}
+    to {transform: translateX(-1500px);}
 }
 
-#imageSlider {
+#windowA{
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+}
 
+#windowJ{
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+}
+#imageSlider {
+display: flex;
 animation-name: example;
 animation-duration: 10s;
 animation-iteration-count: infinite;
@@ -22,9 +33,9 @@ overflow: hidden;
 }
 
 #imageJava {
-
+display: flex;
 animation-name: example;
-animation-duration: 2s;
+animation-duration: 5s;
 animation-iteration-count:infinite;
 overflow: hidden;
 }
@@ -32,7 +43,7 @@ overflow: hidden;
 <body>
 
     <H1><u>Lake View</u> </H1>
- <div id="window" style= "height: 300px; width: 300px; margin: 0 auto;">
+ <div id="windowA" style= "height: 300px; width: 300px; margin: 0 auto;">
      <div id="imageSlider" style="display: flex;">
         <img height="300px"; width="300px" src="https://cdn.thecrazytourist.com/wp-content/uploads/2018/09/ccimage-shutterstock_601048877.jpg"alt="">
         <img height="300px"; width="300px" src="https://www.thetravellingpinoys.com/wp-content/uploads/2017/11/alberta-2297204_1920-1024x690-1.jpg"alt="">
@@ -42,7 +53,7 @@ overflow: hidden;
     </div>
 </div>
 <H1><u>Utah Mountains</u> </H1>
-<div id="window" style="height: 300px; width: 300px; margin: 0 auto;">
+<div id="windowJ" style="height: 300px; width: 300px; margin: 0 auto;">
   <div id="imageJava" style="display: flex;">
       <img height="300px"; width="300px" src="https://cdn.yellowstoneparknet.com/images/content/2858_571_Salt_Lake_City_Utah_Winter_lg.jpg" alt="">
       <img height="300px"; width="300px" src="https://www.skiutah.com/blog/authors/erika/7-spring-hikes-salt-lake-city-and/listing_picture_override/hero--xl" alt="">
@@ -52,21 +63,37 @@ overflow: hidden;
   </div>
 </div>
 
+<script>
+<button onclick="PrevImage()">previous</button>
+<button onclick="nextImage()">next</button>
+
+
+var currentPosition = 0;
+var prevImage = function() {
+   currentPosition = currentPosition - 300;
+   Document.getElementById('imageSlider').style.transform = 'translateX(' + currentPosition + 'px)'
+}
+var currentPosition = 0;
+var nextImage = function() {
+   currentPosition = currentPosition - 300;
+   Document.getElementById('imageSlider).style.transform = 'translateX(' + currentPosition + 'px)'
+}
+
+</script>
 
   <button onclick="PrevImage()">previous</button>
   <button onclick="nextImage()">next</button>
 
   <script>
  var currentPosition = 0;
-
  var prevImage = function() {
-     currentPosition = currentPosition + 300;
-     Document.getElementById('imageSlider').style.transform = 'translateX(' + currentPosition + 'px)'
+     currentPosition = currentPosition - 300;
+     Document.getElementById('imageJava').style.transform = 'translateX(' + currentPosition + 'px)'
  }
-
+ var currentPosition = 0;
  var nextImage = function() {
      currentPosition = currentPosition - 300;
-     Document.getElementById('imageSlider').style.transform = 'translateX(' + currentPosition + 'px)'
+     Document.getElementById('imageJava').style.transform = 'translateX(' + currentPosition + 'px)'
  }
 
   </script>
